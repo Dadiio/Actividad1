@@ -1,4 +1,5 @@
 import React from "react";
+import MSideNav from "./SideNav";
 import './HeaderCss.css';
 
 const Header =() => {
@@ -13,9 +14,10 @@ const Header =() => {
                 <input type="text" placeholder="Digite el nombre del libro" />
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <img src="./images/books4.jpeg" alt="#" />
-        </div>
-    </div>    
+            <img src="./images/Books4.jpeg" alt="" />
+        </div>        
+    </div> 
+    
   );
 }
 

@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-import mSideNav from './Components/SideNav';
+
 import Header from './Components/Header';
+import Card from './Components/Card';
 
 function App() {
   return (
-    <div >
+    <div >             
       <Header/>
-      <mSideNav/>     
-      
+      <div className="container">
+        <Card />
+      </div>
     </div>
   );
 }
