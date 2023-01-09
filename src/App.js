@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import mSideNav from './Components/SideNav';
+import Header from './Components/Header';
 
 function App() {
   return (
-    <div className="App">
-    
+    <div >
+      <Header/>
+      <mSideNav/>     
+      
     </div>
   );
 }
