@@ -5,10 +5,7 @@
     font-family: 'Bodoni Moda', serif;
 }
 
-:root{
-    --primary-color:#94380B;
-    --secondary-color:white;
-}
+
 
 body{
     background-color: var(--primary-color);
