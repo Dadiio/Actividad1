@@ -5,8 +5,6 @@
     font-family: 'Bodoni Moda', serif;
 }
 
-
-
 body{
     background-color: var(--primary-color);
 }
@@ -84,3 +82,12 @@ html{
     width: 35px;
     padding: 0 0.5rem;
 }
+.container{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+  }
