@@ -1,6 +1,7 @@
 import React from "react";
 import "./CardCss.css"
 import axios from "axios";
+import Modal from "./Modal";
 
 
 const Card =({libro}) =>{
@@ -22,6 +23,7 @@ const Card =({libro}) =>{
                 <p className="precio">US&#65284;{precio}</p>
               </div>
             </div> 
+            <Modal />
             </>
           )
         }        
