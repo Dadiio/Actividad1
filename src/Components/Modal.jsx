@@ -1,7 +1,7 @@
 import React from "react";
 import './ModalCss.css'
 
-const Modal=() =>{
+const Modal=(mostrar,item) =>{
     return (
         <>
             <div className="overlay">
@@ -10,7 +10,7 @@ const Modal=() =>{
                         <i class="fas fa-times" />
                     </button>
                     <div className="inner-box">
-                        <img src="./images/Books4.png" alt="#" />
+                        <img src="./images/portada.png" alt="#" />
                         <div className="info">
                             <h1>PRueba React</h1><br/>
                             <h3>otra prueba</h3><br/>

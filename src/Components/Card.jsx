@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CardCss.css"
 import axios from "axios";
 import Modal from "./Modal";
 
 
 const Card =({libro}) =>{
-  console.log(libro)
+  const [mostrar, setMostrar]=useState(false);
+  const [itemLibro,setItem] = useState();
   return (
     <>
     {
@@ -16,7 +17,7 @@ const Card =({libro}) =>{
         {
           return (
             <>
-            <div className="card">
+            <div className="card" onClick={()=>{setMostrar(true)}}>
               <img src={miniImg} alt="#" />
               <div className="bottom">
                 <h3 className="titulo">{item.volumeInfo.title}</h3>
