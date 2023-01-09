@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Bodoni Moda', serif;
+}
+
+:root{
+    --primary-color:#94380B;
+    --secondary-color:white;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+html{
+    font-size: 75.5%;
+}
+
+.header{
+    width: 100%;
+    height: 250px;
+    color: var(--secondary-color);
+    box-shadow: 0 5px 10px var(--secondary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header ::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/Books4.png);
+    clip-path: circle(60% at left 250px);
+    z-index: -1;
+}
+
+.fila2{
+    position: absolute;
+    top:10px;
+    right: 150px;
+    text-align: center;
+}
+
+.fila2 h2{
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.fila2 img{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.fila1 h1{
+    font-size:  3rm;
+    text-align: center;
+    margin-left: 35px;    
+    font-family: 'Bodoni Moda', serif;
+}
+
+.busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.busqueda input{
+    outline: 0;
+    border: 0;
+    width: 250px;
+    height: 35px;
+    padding: 0 0.5rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+.busqueda button{
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 35px;
+    padding: 0 0.5rem;
+}
