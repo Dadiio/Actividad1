@@ -9,17 +9,22 @@ const Card =({libro}) =>{
     <>
     {
       libro.map((item)=>{
-        return (
-          <>
-          <div className="card">
-            <img src="./images/portada.png" alt="#" />
-            <div className="bottom">
-              <h3 className="titulo">The book of mind</h3>
-              <p className="precio">RD&#65284;3290</p>
-            </div>
-          </div> 
-          </>
-        )
+        let miniImg =item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail;
+        let precio = item.saleInfo.listPrice && item.saleInfo.listPrice.amount;
+        if(miniImg!= undefined && precio!=undefined) 
+        {
+          return (
+            <>
+            <div className="card">
+              <img src={miniImg} alt="#" />
+              <div className="bottom">
+                <h3 className="titulo">{item.volumeInfo.title}</h3>
+                <p className="precio">US&#65284;{precio}</p>
+              </div>
+            </div> 
+            </>
+          )
+        }        
       })
     }   
     </>

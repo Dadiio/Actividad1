@@ -10,7 +10,7 @@ const Header =() => {
   const busquedaLibro=(evt) =>{
       if(evt.key ==="Enter")
       {
-        axios.get('https://www.googleapis.com/books/v1/volumes?q='+busqueda+'&key=AIzaSyB9a98Zr5nHaJbuU7rRiJ1Bp3iRu005PA0')
+        axios.get('https://www.googleapis.com/books/v1/volumes?q='+busqueda+'&key=AIzaSyB9a98Zr5nHaJbuU7rRiJ1Bp3iRu005PA0' + '&maxResults=40')
         .then(res=>setDatos(res.data.items))
         .catch(err=>console.log(err))
       }
